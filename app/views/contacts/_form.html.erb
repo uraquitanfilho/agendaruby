@@ -38,12 +38,19 @@
       <%= address_fields.label :state %><br>       <%#foi criado um helper app/helpers/application_helper%>
       <%= address_fields.select :state, options_for_states(@contact.address.state)%> 
     </div>
+  <% end %>
 
-
+<!-- adicionado fields_for para telefones -->
+<div id="phones"> <!-- O id tem q ser o nome do objeto, no caso phones-->
+   <%= f.fields_for :phones do |phones_fields| %>
+     <%= render partial: "phone_fields", locals: {f: phones_fields}%>
    <% end %>
-
-
-
+   
+    <div class="field">
+    <%= f.label :> %><br>
+    <%= link_to_add_association('[Adicionar Telefone]', f, :phones)%>
+  </div>
+</div>
   <div class="field">
     <%= f.label :rmk %><br>
     <%= f.text_area :rmk %>

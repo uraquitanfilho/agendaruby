@@ -6,7 +6,10 @@
         other: Contatos
       address:
         one: Endereço
-        other: Endereços        
+        other: Endereços 
+      phone:
+        one: Telefone
+        other: Telefones
     attributes:
       contact:
         name: Nome
@@ -20,3 +23,5 @@
         state: Estado
         contact_id: Contato
         contact: Contato
+      phone:
+        phone: Telefone
