@@ -1,9 +1,9 @@
-<h1>Seja Bem-Vindo!</h1>
-<h2><%= t 'hello'%></h2>
-<h3><%= l Date.today%></h3>
-<ul>
-  <li><%= link_to "Tipos", kinds_path %></li>
-  <li><%= link_to "Contatos", contacts_path %></li>
-  <li><%= link_to "Endereço", addresses_path %></li>
-  <li><%= link_to "Telefone", phones_path %></li>
-</ul>
+<div class="basic-grey">
+<h1><%= t 'message.welcome'%></h1>
+<ol>
+  <li><%= link_to t('home.kinds'), kinds_path %></li>
+  <li><%= link_to t('home.contacts'), contacts_path %></li>
+  <li><%= link_to t('home.addresses'), addresses_path %></li>
+  <li><%= link_to t('home.phones'), phones_path %></li>
+</ol>
+</div>

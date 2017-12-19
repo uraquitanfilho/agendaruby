@@ -11,3 +11,10 @@
   message:
     confirm: Você tem certeza?
     listing: Listando
+    welcome: Bem Vindo ao Sistema de Agenda
+  home:
+    kinds: Tipos
+    contacts: Contatos
+    addresses: Endereços
+    phones: Telefones
+    

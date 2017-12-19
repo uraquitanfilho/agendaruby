@@ -6,6 +6,7 @@ gem 'rails', '4.1.6'
 gem 'faker'
 gem 'rails-i18n','~>4.0.0' #for 4.0.x
 gem 'cocoon'
+gem 'kaminari' # PAGINAÇÂO
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
