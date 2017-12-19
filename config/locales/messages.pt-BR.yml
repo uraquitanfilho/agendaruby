@@ -1,0 +1,13 @@
+"pt-BR":
+  contact:
+    title: Lista de Contatos
+  buttons:
+    show: Mostrar
+    edit: Editar
+    destroy: Apagar
+    newitem: Novo
+    send: Enviar
+    back: Voltar
+  message:
+    confirm: Você tem certeza?
+    listing: Listando

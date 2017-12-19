@@ -1,0 +1,10 @@
+"pt-BR":
+  activerecord:
+    models:
+      contact: Contact
+    attributes:
+      contact:
+        name: "Name"
+        email: "Email"
+        kind: "Contact type"
+        rmk: "Rmk"
