@@ -65,6 +65,9 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
+    kaminari-i18n (0.4.0)
+      kaminari
+      rails
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     method_source (0.9.0)
@@ -140,6 +143,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
+  kaminari-i18n
   pry-rails
   rails (= 4.1.6)
   rails-i18n (~> 4.0.0)
