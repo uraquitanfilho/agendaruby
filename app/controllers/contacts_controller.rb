@@ -2,7 +2,7 @@ class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
   # antes dos itens: new, edit, update, create ocorrer, será carregado as opcoes do select
   before_action :set_options_for_select, only: [:new, :edit, :update, :create]
-
+  http_basic_authenticate_with name:"login", password: "senha", only: [:destroy] #autenticacao básica
   # GET /contacts
   # GET /contacts.json
   def index
