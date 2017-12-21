@@ -4,6 +4,14 @@
   <title>Notebook</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <%#params[:controller] vai retornar o nome do controller corrente: exemplo: home, logo irá pusar o assets home.css home.js
+    # é obrigado a declarar em config/initializers/assets pois antes quem controlava era o application. Agora está manualmente
+  %>
+  <%= stylesheet_link_tag    params[:controller] %>
+  <%= javascript_include_tag params[:controller] %>
+  
+  <%#= javascript_include_tag 'alert'%>
   <%= csrf_meta_tags %>
 </head>
 <body>
