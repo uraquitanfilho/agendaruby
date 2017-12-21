@@ -2,13 +2,24 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'bundler', '>=1.6.2' #dependência para garantir q vai funcionar: as dependências não precisa mais se preocupar 
+
+#gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
+### ou entao
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular'
+  gem 'rails-assets-leaflet'
+end
+
+
 gem 'rails', '4.1.6'
 gem 'faker'
 gem 'rails-i18n','~>4.0.0' #for 4.0.x
 gem 'cocoon'
 gem 'kaminari' # PAGINAÇÂO
 gem 'kaminari-i18n'
-gem 'bower-rails', '~> 0.10.0' # REALIZAR BOWER
+#gem 'bower-rails', '~> 0.10.0' # REALIZAR BOWER --> foi removida para utilizar a gem bundler 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
