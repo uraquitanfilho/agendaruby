@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.1.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'bundler', '>=1.6.2' #dependência para garantir q vai funcionar: as dependências não precisa mais se preocupar 
@@ -21,8 +21,6 @@ gem 'kaminari-i18n'
 gem 'bootstrap-sass', '~> 3.3.1.0' 
 
 #gem 'bower-rails', '~> 0.10.0' # REALIZAR BOWER --> foi removida para utilizar a gem bundler 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -58,3 +56,8 @@ gem 'pry-rails', group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', group: :development
+
+gem 'pg', group: :development #heroku so aceita postgres
+gem 'rails_12factor', group: :production  #dependência para heroku
