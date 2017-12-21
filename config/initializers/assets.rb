@@ -20,5 +20,4 @@ Rails.application.config.assets.precompile += %w( alert.js
                                                   contacts.css
                                                   home.css
                                                   kinds.css
-                                                  phones.css
-                                                  notifyjs/notify.js) #blblioteca externa: vendor/assets/javascripts/notifyjs/notify.js
+                                                  phones.css)

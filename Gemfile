@@ -8,6 +8,7 @@ gem 'rails-i18n','~>4.0.0' #for 4.0.x
 gem 'cocoon'
 gem 'kaminari' # PAGINAÇÂO
 gem 'kaminari-i18n'
+gem 'bower-rails', '~> 0.10.0' # REALIZAR BOWER
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
