@@ -8,10 +8,21 @@
     newitem: Novo
     send: Enviar
     back: Voltar
+    home: Home
   message:
     confirm: Você tem certeza?
     listing: Listando
     welcome: Bem Vindo ao Sistema de Agenda
+    created: Registro criado com sucesso!
+    updated: Registro atualizado com sucesso!
+    destroyed: Registro excluído com sucesso!
+  messages:
+    confirm: Tem certeza?
+    listing: Listando
+    errors: ocorreram...
+    created: Item criado com sucesso!
+    updated: Item atualizado com sucesso!
+    destroyed: Item excluído com sucesso!    
   home:
     kinds: Tipos
     contacts: Contatos

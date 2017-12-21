@@ -12,13 +12,14 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-leaflet'
 end
 
-
 gem 'rails', '4.1.6'
 gem 'faker'
 gem 'rails-i18n','~>4.0.0' #for 4.0.x
 gem 'cocoon'
 gem 'kaminari' # PAGINAÇÂO
 gem 'kaminari-i18n'
+gem 'bootstrap-sass', '~> 3.3.1.0' 
+
 #gem 'bower-rails', '~> 0.10.0' # REALIZAR BOWER --> foi removida para utilizar a gem bundler 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

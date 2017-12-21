@@ -1,10 +1,10 @@
 <div class="basic-grey">
 <h1><%= t 'message.welcome'%></h1>
 <ol>
-  <li><%= link_to t('home.kinds'), kinds_path %></li>
-  <li><%= link_to t('home.contacts'), contacts_path %></li>
-  <li><%= link_to t('home.addresses'), addresses_path %></li>
+  <li><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> - <%= link_to t('home.kinds'), kinds_path %></li>
+  <li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> - <%= link_to t('home.contacts'), contacts_path %></li>
+  <!--<li><%= link_to t('home.addresses'), addresses_path %></li>
   <li><%= link_to t('home.phones'), phones_path %></li>
-    <li><%= link_to "Teste de AJAX - chamando phones", phones_path, remote: true %></li>
+    <li><%= link_to "Teste de AJAX - chamando phones", phones_path, remote: true %></li> -->
 </ol>
 </div>

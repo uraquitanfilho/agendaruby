@@ -29,6 +29,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bootstrap-sass (3.3.1.0)
+      sass (~> 3.2)
     builder (3.2.3)
     cocoon (1.2.11)
     coderay (1.1.2)
@@ -138,6 +140,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (~> 3.3.1.0)
   bundler (>= 1.6.2)
   cocoon
   coffee-rails (~> 4.0.0)
