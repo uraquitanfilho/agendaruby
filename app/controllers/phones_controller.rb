@@ -4,7 +4,13 @@ class PhonesController < ApplicationController
   # GET /phones
   # GET /phones.json
   def index
-    @phones = Phone.all
+    #@phones = Phone.all
+    #ALTERADO PARA EXEMPLIFICAR O USO DE CHAMADA AJAX
+    #CICLO DO RAILS : browser > controller > js > browser: precisa criar um arquivo chamado index.js.erb em views/phones
+    respond_to do |format|
+        format.html { @phones = Phone.all}
+        format.js { }
+    end    
   end
 
   # GET /phones/1
