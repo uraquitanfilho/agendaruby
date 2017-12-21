@@ -5,4 +5,7 @@ class Contact < ActiveRecord::Base
   
   accepts_nested_attributes_for :address #singular pois é has_one
   accepts_nested_attributes_for :phones, reject_if: :all_blank, allow_destroy: true  #plural pois é has_many
+  
+  validates :name, presence: true, length: {minimum: 3}
+  validates :email, presence: true
 end

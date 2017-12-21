@@ -1,16 +1,6 @@
 <%= form_for(@contact, html: {class: "basic-grey"}) do |f| %>
-  <% if @contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
 
-      <ul>
-      <% @contact.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <h1>Contacts</h1>
+  <h1><%= t('home.contacts')%></h1>
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -59,4 +49,15 @@
     <%= f.submit t('buttons.send'), class: "button" %>
     <%= link_to t('buttons.back'), contacts_path, class: "button-back" %>
   </div>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> <%= t('error.new_contact.message')%></h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 <% end %>

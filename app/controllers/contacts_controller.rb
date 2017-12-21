@@ -1,5 +1,7 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
+  # antes dos itens: new, edit, update, create ocorrer, será carregado as opcoes do select
+  before_action :set_options_for_select, only: [:new, :edit, :update, :create]
 
   # GET /contacts
   # GET /contacts.json
@@ -12,19 +14,19 @@ class ContactsController < ApplicationController
   def show
   end
 
-  def options_for_select
+  def set_options_for_select
     @kind_options_for_select = Kind.all
   end 
   # GET /contacts/new
   def new
     @contact = Contact.new
     @contact.build_address #foi adicionado para criar o objeto de endereço no form de contatos
-    options_for_select
+   #options_for_select
   end
 
   # GET /contacts/1/edit
   def edit
-    options_for_select
+    # options_for_select
   end
 
   # POST /contacts

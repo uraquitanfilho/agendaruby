@@ -17,4 +17,7 @@
     contacts: Contatos
     addresses: Endereços
     phones: Telefones
+  error:
+    new_contact:
+       message: . Não é possível realizar esta operação!   
     
